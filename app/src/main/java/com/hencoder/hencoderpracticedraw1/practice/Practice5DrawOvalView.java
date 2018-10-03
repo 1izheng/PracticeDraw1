@@ -23,6 +23,8 @@ public class Practice5DrawOvalView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDraw(Canvas canvas) {
@@ -30,7 +32,6 @@ public class Practice5DrawOvalView extends View {
 
 //        练习内容：使用 canvas.drawOval() 方法画椭圆
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         paint.setStyle(Paint.Style.FILL);
 

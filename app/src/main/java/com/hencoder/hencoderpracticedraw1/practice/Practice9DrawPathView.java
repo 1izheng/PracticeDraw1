@@ -22,16 +22,17 @@ public class Practice9DrawPathView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    Path path = new Path();
     @Override
     protected void onDraw(Canvas canvas) {
+
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawPath() 方法画心形
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStyle(Paint.Style.FILL);
 
-        Path path = new Path();
 
 
         path.addArc(200, 200, 300, 300, -225, 225);

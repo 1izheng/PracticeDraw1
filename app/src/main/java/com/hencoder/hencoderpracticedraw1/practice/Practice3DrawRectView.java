@@ -22,12 +22,12 @@ public class Practice3DrawRectView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawRect() 方法画矩形
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.BLACK);
         canvas.drawRect(250, 250, 500, 500, paint);

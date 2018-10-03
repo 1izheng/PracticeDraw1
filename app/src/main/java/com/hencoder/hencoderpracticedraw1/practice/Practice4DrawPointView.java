@@ -21,6 +21,8 @@ public class Practice4DrawPointView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -29,9 +31,7 @@ public class Practice4DrawPointView extends View {
 //        一个圆点，一个方点
 //        圆点和方点的切换使用 paint.setStrokeCap(cap)：`ROUND` 是圆点，`BUTT` 或 `SQUARE` 是方点
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStrokeWidth(50);
-
         paint.setStrokeCap(Paint.Cap.ROUND);
 
         canvas.drawPoint(200,300,paint);

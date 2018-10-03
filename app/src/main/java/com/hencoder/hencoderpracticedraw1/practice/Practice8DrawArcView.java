@@ -22,13 +22,13 @@ public class Practice8DrawArcView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawArc() 方法画弧形和扇形
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         RectF rectF = new RectF(200, 250, 500, 450);
 

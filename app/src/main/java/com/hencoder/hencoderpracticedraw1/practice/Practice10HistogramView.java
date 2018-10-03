@@ -21,6 +21,7 @@ public class Practice10HistogramView extends View {
     public Practice10HistogramView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -29,7 +30,7 @@ public class Practice10HistogramView extends View {
 //        综合练习
 //        练习内容：使用各种 Canvas.drawXXX() 方法画直方图
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
 
         paint.setColor(Color.WHITE);
 
